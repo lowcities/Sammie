@@ -1,0 +1,372 @@
+/*========================================================
+  Main Section styles
+ ========================================================*/ 
+
+.clearfix {
+  overflow: auto;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  } 
+
+    html{
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+
+
+    body{
+      background: linear-gradient( to bottom right, orange 60%, transparent), 
+                  url('../img/img_0969.jpg') no-repeat bottom; 
+       max-height: 100%;
+       overflow: hidden;           
+    }
+
+    header {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient( to top, orange 10%, transparent),
+                  url('../img/img_1334.jpg') no-repeat;
+      
+
+    }
+
+    header h1 {
+     
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      position: relative;
+      padding-top: 30px;
+      margin: 0;
+
+      }  
+
+
+  footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .9rem;
+    display: block;
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    
+    }
+
+    .clearfooter {
+      height: 50px;
+      clear: both;
+
+
+
+    }
+
+  
+
+
+   
+     
+  .sammie {
+   	position: relative;
+    max-width: 30%;
+    max-height: 45%;
+    border-radius: 50%;
+    border: 3px solid white;
+    }
+
+ /*========================================================
+  Navigation styles
+ ========================================================*/ 
+
+  .navigation {
+    width: 150px;
+    list-style: none;
+    display: block;
+    line-height: 1.5;
+    margin: 100px 0 0 95px;
+  }
+
+     
+
+  
+ 
+ .about, 
+ .pictures,
+ .blog,
+ .contact {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    height: 30px;
+    background-color: #e76914;
+    width: 150px;
+    
+ }
+
+ 
+
+ .pictures,
+ .blog,
+ .contact {
+  margin-top: 30px;
+  
+ }
+
+ /*========================================================
+  Home page Blog
+ ========================================================*/ 
+
+  .intro {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 40px;
+    margin: 30px 0 0 30px;
+
+    
+
+  }
+
+  .top{
+     line-height: 2;
+     padding-bottom: 10px;
+
+
+   }
+  
+
+  .date {
+    height: 40px;
+    line-height: 1.8;
+
+
+  }
+
+  .dirt {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 120px;
+    margin: 10px 0 0 30px;
+    
+  
+    
+
+}
+.intro,
+.dirt,
+.date {
+  background: linear-gradient( to left, #e76914, transparent);
+
+}
+
+/*========================================================
+  Picture page Gallery
+ ========================================================*/ 
+
+ .gallery {
+   width: 800px;
+   margin: 0 auto;
+   padding-top: 50px;
+   padding-left: 100px;
+
+ }
+ 
+
+ .gallery ul {
+  text-align: center;
+  
+  height: 300px;
+  margin-top: 100px;
+ 
+  list-style: none;
+
+}
+  
+  
+  .gallery li {
+    float: right;
+    display: block;
+    width: 20%;
+   
+    margin: 2.5%;
+    padding-top: 10px;
+
+
+  }
+  
+
+
+/*===================================================
+  Media Queries
+ ===================================================*/
+ 
+  
+ @media only screen and (min-width: 768px) {
+
+    header {
+      height: 300px;
+      width: 100%;
+      text-align: center;
+      background: url('../img/img_1334.jpg') no-repeat;
+      margin:  0 auto;
+  
+      }
+
+     header h1 {
+     
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      position: absolute;
+      margin: 150px 50px 400px 420px;
+      padding-bottom: 50px;
+
+      }  
+
+    .sammie {
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 60px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 3px solid white;
+  
+  
+    } 
+
+      
+  
+
+    .navigation {
+      list-style: none;
+      float: left;
+      display: inline-block;
+      line-height: 1.5;
+      margin: 200px 0 0 80px;
+
+       
+        }
+
+    .about:hover {
+    margin-left: 15px;
+    list-style-image: url('../img/box.png');
+    list-style-position: outside;
+
+  }
+
+  .blog:hover {
+    margin-left: 15px;
+    list-style-image: url('../img/box.png');
+    list-style-position: outside;
+  }
+
+  .pictures:hover {
+    margin-left: 15px;
+    list-style-image: url('../img/box.png');
+    list-style-position: outside;
+  }
+ 
+ .contact:hover {
+    margin-left: 15px;
+    list-style-image: url('../img/box.png');
+    list-style-position: outside;
+  }
+ 
+ .about, 
+ .pictures,
+ .blog,
+ .contact {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    height: 30px;
+    background-color: #e76914;
+    width: 150px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+
+ }   
+
+
+
+
+    .intro {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    margin: 200px 200px 0 0;
+    
+    
+  }
+
+   .top{
+     line-height: 2;
+     padding-bottom: 10px;
+
+
+   }
+
+ 
+
+
+  .dirt {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    
+  
+    
+
+} 
+
+  }   
+   
+
+.wrapper {
+      min-height: calc(100vh - 50px);
+}
+
+  
